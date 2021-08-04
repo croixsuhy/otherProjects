@@ -16,7 +16,7 @@ it will eventually get to the end result.
 string = ""
 
 # Turn this variable to True to see what's going on in the background
-UNDER_THE_HOOD = True
+UNDER_THE_HOOD = False
 ########################################################################
 
 
