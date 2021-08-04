@@ -16,7 +16,7 @@ it will eventually get to the end result.
 string = ""
 
 # Turn this variable to True to see what's going on in the background
-UNDER_THE_HOOD = False
+UNDER_THE_HOOD = True
 ########################################################################
 
 
@@ -36,15 +36,15 @@ def random():
 
 
 def main():
+    global randomString
+
+    # Random string, will be completely randomized
+    randomString = ""
+
     print("Monkey is currently banging the keyboard...")
 
     while True:
         try:
-            global randomString
-
-            # Random string, will be completely randomized
-            randomString = ""
-
             # While the string isn't equal to the user imputed string,
             # it will clear the variable and run the randomizer again
             if randomString != STRING:
