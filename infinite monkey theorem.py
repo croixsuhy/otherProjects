@@ -55,5 +55,6 @@ def main():
         except RuntimeError:
             print("Can not randomize")
 
+
 if __name__ == "__main__":
     main()
