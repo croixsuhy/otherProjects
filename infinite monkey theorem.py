@@ -13,7 +13,7 @@ it will eventually get to the end result.
 ########################################################################
 # Insert word/sentence below (note: you can only letters and spaces)
 # Note the longer the string is, it will take longer
-string = ""
+string = "boy"
 
 # Turn this variable to True to see what's going on in the background
 UNDER_THE_HOOD = False
@@ -26,9 +26,6 @@ STRING = string.lower()
 # Generates characters
 CHARS = ascii_lowercase + " "
 
-# Random string, will be completely randomized
-randomString = ""
-
 
 def random():
     global randomString
@@ -37,9 +34,15 @@ def random():
     for i in range(len(STRING)):
         randomString += choice(CHARS)
 
+
 def main():
     while True:
         try:
+            global randomString
+
+            # Random string, will be completely randomized
+            randomString = ""
+
             # While the string isn't equal to the user imputed string,
             # it will clear the variable and run the randomizer again
             if randomString != STRING:
