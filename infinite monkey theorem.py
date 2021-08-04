@@ -13,7 +13,7 @@ it will eventually get to the end result.
 ########################################################################
 # Insert word/sentence below (note: you can only letters and spaces)
 # Note the longer the string is, it will take longer
-string = ""
+string = "boy"
 
 # Turn this variable to True to see what's going on in the background
 UNDER_THE_HOOD = False
@@ -36,6 +36,8 @@ def random():
 
 
 def main():
+    print("Monkey is currently banging the keyboard...")
+
     while True:
         try:
             global randomString
