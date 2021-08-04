@@ -37,20 +37,23 @@ def random():
     for i in range(len(STRING)):
         randomString += choice(CHARS)
 
+def main():
+    while True:
+        try:
+            # While the string isn't equal to the user imputed string,
+            # it will clear the variable and run the randomizer again
+            if randomString != STRING:
+                if UNDER_THE_HOOD:
+                    print(randomString)
+                randomString = ""
+                random()
+            else:
+                # When its completed, the loop will end
+                print(f"Completed: {randomString}")
+                break
 
-while True:
-    try:
-        # While the string isn't equal to the user imputed string,
-        # it will clear the variable and run the randomizer again
-        if randomString != STRING:
-            if UNDER_THE_HOOD:
-                print(randomString)
-            randomString = ""
-            random()
-        else:
-            # When its completed, the loop will end
-            print(f"Completed: {randomString}")
-            break
+        except RuntimeError:
+            print("Can not randomize")
 
-    except RuntimeError:
-        print("Can not randomize")
+if __name__ == "__main__":
+    main()
