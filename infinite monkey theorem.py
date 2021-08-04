@@ -13,7 +13,7 @@ it will eventually get to the end result.
 ########################################################################
 # Insert word/sentence below (note: you can only letters and spaces)
 # Note the longer the string is, it will take longer
-string = "boy"
+string = ""
 
 # Turn this variable to True to see what's going on in the background
 UNDER_THE_HOOD = False
